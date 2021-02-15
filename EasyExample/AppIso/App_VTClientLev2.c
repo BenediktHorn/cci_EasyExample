@@ -109,7 +109,10 @@ void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pBut
 		Tageszaehler++;
 		Gesamtzaehler++;
 		break;
-
+	case Button_minus:
+		Tageszaehler--;
+		Gesamtzaehler--;
+		break;
 	case SoftKey_Reset_Gesamtzaehler:
 	case Button_Reset_Gesamtzaehler:
 		Gesamtzaehler = 0;
@@ -120,6 +123,10 @@ void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pBut
 		Tageszaehler = 0;
 		break;
 
+	case SoftKey_minus:
+			Tageszaehler--;
+			Gesamtzaehler--;
+			break;
 	default:
 		break;
 	}
