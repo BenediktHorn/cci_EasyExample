@@ -140,7 +140,7 @@ void VTC_handleSoftkeysAndButtons_RELEASED(const struct ButtonActivation_S *pBut
 			IsoVtcCmd_ObjHideShow(pButtonData->u8Instance,Container_Tagesziel, false);
 
 
-IsoVtcCmd_ObjHideShow(pButtonData->u8Instance, u16ObjId, qVisible)
+
 
 
 	// Senden des Wertes der lokalen Variable Tageszaehler an die NumberVariable_Tageszaehler
